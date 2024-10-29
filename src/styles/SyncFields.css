@@ -1,0 +1,60 @@
+/* Wrapper for the entire component */
+.syncfields-container {
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+    gap: 15px;
+    padding: 30px;
+    background-color: #1b263b; /* Dark blue background */
+    min-height: 100vh;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Input box on the left */
+.syncfields-input-box input {
+    width: 400px;
+    height: 800px;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background-color: #f0f4f8;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 18px;
+    color: #333;
+    text-align: left;
+    transition: box-shadow 0.2s ease-in-out;
+}
+
+/* Output box on the right */
+.syncfields-output-box input {
+    width: 400px;
+    height: 800px;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background-color: #e9ecef;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 18px;
+    color: #6c757d;
+    text-align: left;
+    cursor: not-allowed; /* Indicate the field is read-only */
+}
+
+/* Input focus effect */
+.syncfields-input-box input:focus {
+    outline: none;
+    box-shadow: 0px 0px 12px rgba(91, 192, 235, 0.5);
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 600px) {
+    .syncfields-container {
+        flex-direction: column;
+    }
+
+    .syncfields-input-box input,
+    .syncfields-output-box input {
+        width: 90%; /* Full width on small screens */
+    }
+}

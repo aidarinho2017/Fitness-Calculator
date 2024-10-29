@@ -1,0 +1,115 @@
+
+.div1 {
+    background-color: #1b263b; /* Dark blue background */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Header styling */
+.head {
+    color: #e0e1dd;
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/* Input styling */
+input {
+    width: 200px;
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f0f4f8;
+    font-size: 18px;
+    color: #333;
+    transition: box-shadow 0.2s ease-in-out;
+}
+
+.sel {
+    width: 100px;
+    height: 40px;
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f0f4f8;
+    font-size: 18px;
+    color: #333;
+    transition: box-shadow 0.2s ease-in-out;
+}
+
+/* Input focus effect */
+input:focus {
+    outline: none;
+    box-shadow: 0px 0px 12px rgba(91, 192, 235, 0.5);
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; /* Add spacing between inputs */
+}
+
+/* Button styling */
+button {
+    margin-top: 10px;
+    padding: 12px 24px;
+    background-color: #4e73df;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s ease-in-out;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Button hover and active effects */
+button:hover {
+    background-color: #375a7f;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+/* BMI result styling */
+h2 {
+    text-align: center;
+    color: #e0e1dd;
+    margin: 10px 0;
+}
+
+p {
+    text-align: center;
+    color: #e0e1dd;
+    font-size: 20px;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 600px) {
+    input {
+        width: 90%; /* Full width input on small screens */
+    }
+
+    .head {
+        font-size: 28px;
+    }
+
+    button {
+        width: 90%;
+    }
+}
+
