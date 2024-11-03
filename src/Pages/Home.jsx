@@ -2,7 +2,6 @@
 import React, {useState} from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/Home.css';
-import Footer from "../components/Footer"; // Adjust the path if needed
 
 const Home = () => {
     const[darkMode, setDarkMode] = useState(true);

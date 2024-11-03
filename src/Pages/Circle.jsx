@@ -1,6 +1,5 @@
 import React, {useState} from 'react';
 import '../styles/Circle.css';
-import Header from "../components/Header";
 
 const Circle = () => {
     const[color, setColor] = useState('black');

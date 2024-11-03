@@ -4,7 +4,7 @@ import '../styles/BMI.css';
 const PaceCalculator = () => {
     const [time, setTime] = useState(''); // Holds time in HH:MM:SS format
     const [distance, setDistance] = useState(null);
-    const [pace, setPace] = useState(null);
+    const [setPace] = useState(null);
     const [message, setMessage] = useState('');
 
     // Convert HH:MM:SS to total minutes

@@ -1,6 +1,5 @@
 import React, {useState} from 'react'
 import Habit from "../components/Habit";
-import Header from "../components/Header";
 import Footer from "../components/Footer";
 import '../styles/Habits.css';
 
