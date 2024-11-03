@@ -1,0 +1,27 @@
+.colorControls {
+    display: flex;
+    flex-direction: column;
+}
+
+.colorControls label{
+    color: whitesmoke;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.slider {
+    color: white;
+}
+
+.sel1{
+    width: 200px;
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f0f4f8;
+    font-size: 18px;
+    color: #333;
+    transition: box-shadow 0.2s ease-in-out;
+}
