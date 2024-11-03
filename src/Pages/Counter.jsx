@@ -9,23 +9,25 @@ const Counter = () => {
     return (
         <div className={"container"}>
             <p className={"header"}>PLAY WITH NUMBERS</p>
-            <div className={"habitContainer"}>
-                <button className={"button-33"} type={"button"} onClick={() => setValue(value + 1)}>add</button>
-                <button className={"button-52"} type={"button"} onClick={() => setValue(value - 1)}>sub</button>
+            <div className={"buttonContainer"}>
+                <button className={"button-33"} type={"button"} onClick={() => setValue(value + 1)}>+1</button>
+                <button className={"button-68"} type={"button"} onClick={() => setValue(value - 1)}>-1</button>
             </div>
-            <div className={"habitContainer"}>
+            <div className={"buttonContainer"}>
+                <button className={"button-33"} type={"button"} onClick={() => setValue(value * 2)}>*2</button>
+                <button className={"button-68"} type={"button"} onClick={() => setValue(value / 2)}>/2</button>
+            </div>
+            <div className={"buttonContainer"}>
                 <span className={"num"}>{value}</span>
             </div>
-            <div className={"habitContainer"}>
-                <button className={"button-33"} type={"button"} onClick={() => setValue(value * 2)}>mult</button>
-                <button className={"button-52"} type={"button"} onClick={() => setValue(value / 2)}>div</button>
-            </div>
-            { !destroyed && (
+            {!destroyed && (
                 <div>
-                <div className={"habitContainer"}>
-                    <button className={"button-73"} type={"button"} onClick={() => setDestroyed(true)}>delete button and text</button>
-                </div>
-                <p>disappearing text</p>
+                    <div className={"buttonContainer"}>
+                        <button className={"button-73"} type={"button"} onClick={() => setDestroyed(true)}>delete button
+                            and text
+                        </button>
+                    </div>
+                    <p>disappearing text</p>
                 </div>
             )
 
